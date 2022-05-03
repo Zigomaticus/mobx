@@ -1,9 +1,14 @@
 import "./App.css";
-import { observer } from "mobx-react-lite";
-import { makeAutoObservable } from "mobx";
+import Counter from "./Counter";
+import Todo from "./Todo";
 
 function App() {
-  return <div className="App">!</div>;
+  return (
+    <div className="App">
+      <Counter />
+      <Todo />
+    </div>
+  );
 }
 
 export default App;
